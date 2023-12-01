@@ -1,0 +1,117 @@
+:root{
+  --paleBlue: hsl(225, 100%, 94%);
+--brightBlue: hsl(245, 75%, 52%);
+
+--VeryPaleBlue: hsl(225, 100%, 98%);
+--desaturatedBlue: hsl(224, 23%, 55%);
+--darkBlue: hsl(223, 47%, 23%);
+
+--PrimaryFont:'Red Hat Display', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-weight: 500;
+  font-family: var(--PrimaryFont);
+  background-color: var(--paleBlue);
+ 
+  
+}
+.card{
+  display: grid;
+ 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1{
+  font-family: var(--PrimaryFont);
+  font-weight: 900;
+  color: var(--darkBlue);
+  margin-bottom: 15px;
+  text-align: center;
+ 
+   
+}
+h4{
+  color: var(--desaturatedBlue);
+}
+
+p{
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--desaturatedBlue);
+  text-align: center;
+}
+.head{
+   background-color: var(--VeryPaleBlue);
+  width: 450px;
+  margin-bottom: 15px;
+ 
+
+}
+h5{
+  margin-top: 35px;
+  text-align: center;
+  background: var(--VeryPaleBlue);
+  color: var(--desaturatedBlue);
+  
+}
+
+.information{
+ display: flex;
+padding: 35px;
+width: 450px;
+justify-content: space-between;
+background: var(--VeryPaleBlue);
+
+}
+
+.info{
+  text-decoration:underline ;
+  color: var(--brightBlue);
+}
+
+.button{
+  display: flex;
+ align-items:center ;
+ justify-content: center;
+ margin-bottom: 10px;
+  
+}
+button{
+  background: var(--brightBlue);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+/*Responsive CSS*/
+
+@media only screen and (min-width:310px) and (max-width:1200px) {
+  .information,.head{
+    width: 290px;
+  }
+}
+
+
+
+
+
+
+
+   
+
